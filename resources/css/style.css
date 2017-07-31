@@ -1,14 +1,18 @@
 html {
-  font-size: 20px;
-  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  font-family: "Helvetica", Arial, sans-serif;
 }
+
+body {
+  width: 960px; 
+}
+
 /* Header */
 header {
   background-color: black;
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-height: 100px;
   width: 100%;
   /* position: fixed;
   z-index: 5; */
@@ -20,21 +24,25 @@ header {
   flex-direction: row;
   align-items: center;
   width: 100%;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
 }
 
 header h1 {
   color: white;
   text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .title img {
-  margin-right: 2%;
-  height: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  height: 1.5rem;
 }
-/* Making a main div to push the remainder of page below the fixed header */
+/* Making a main div to push the remainder of page below the fixed header
 #main {
   top: 201px;
-}
+}*/
 
 /* Jumbotron */
 .jumbotron {
@@ -43,15 +51,12 @@ header h1 {
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-  height: 500px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  height: 25rem;
 }
 
 .announcement {
   text-transform: uppercase;
-  width: 30%;
+  width: 20rem;
   min-height: 50%;
   background-color: black;
   color: white;
@@ -63,6 +68,7 @@ background-size: cover;
 
 .announcement h1 {
   font-size: 2rem;
+  font-weight: bold;
   padding-top: 5%;
 }
 
@@ -70,6 +76,10 @@ background-size: cover;
   margin-left: 10%;
 }
 
+.announcement h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
 /* Navigation */
 nav {
   background-color: #B00024;
@@ -97,7 +107,7 @@ nav li {
 /* Create a parent container that spans the width of the page and has explicit height */
 #catalog {
   width: 100%;
-  height: 500px;
+  height: 300px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -111,7 +121,7 @@ nav li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 /* Had to put images in divs to scale them down to spec size */
@@ -147,4 +157,55 @@ nav li {
   align-items: center;
   justify-content: center;
 }
-/* */
+
+/* Contact Info */
+/* Create a parent container that spans the width of the page and has explicit height */
+#contact-info {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Create box to put all contact information in */
+#contact-info-total {
+  /* Use border in debugging positioning of this larger div */
+  /* border: 1px solid red; */
+  width: 60%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.location, .hours {
+  width: 50%;
+}
+
+.location-name, .location-coordinates, .hours-name, .hours-time {
+  width: 60%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+}
+
+.location-name, .hours-name {
+  background: black;
+  color: white;
+}
+
+/* Footer */
+footer{
+  background: black;
+  color: white;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-name {
+  margin-left: 20%;
+}
