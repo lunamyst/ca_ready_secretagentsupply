@@ -83,9 +83,10 @@ background-size: cover;
 }
 /* Navigation */
 nav {
-  background-color: #B00024;
+  background-color: firebrick;
   width: 100%;
-  height: 3rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -122,21 +123,20 @@ nav li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2%;
+  margin-top: 3rem;
 }
 
 /* Had to put images in divs to scale them down to spec size */
 .catalog-item {
   width: 30%;
-  border: 5px solid black;
+  border: 4px solid black;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .catalog-picture {
-  height: 80%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -144,13 +144,16 @@ nav li {
 }
 
 .catalog-picture img {
-  width: 50%;
-  height: 50%;
+  width: 9rem;
+  height: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .catalog-name {
   width: 100%;
-  height: 20%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   background: black;
   color: white;
   display: flex;
@@ -163,11 +166,10 @@ nav li {
 /* Create a parent container that spans the width of the page and has explicit height */
 #contact-info {
   width: 100%;
-  height: 200px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 /* Create box to put all contact information in */
@@ -175,26 +177,22 @@ nav li {
   /* Use border in debugging positioning of this larger div */
   /* border: 1px solid red; */
   width: 60%;
-  height: 50%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .location, .hours {
-  width: 50%;
-}
-
-.location-name, .location-coordinates, .hours-name, .hours-time {
-  width: 60%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  padding-left: 3%;
+  width: 35%;
+  padding-bottom: 4rem;
 }
 
 .location-name, .hours-name {
   background: black;
   color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
 }
 
 /* Footer */
@@ -202,11 +200,15 @@ footer{
   background: black;
   color: white;
   width: 100%;
-  height: 200px;
+  height: 5rem;
   display: flex;
   align-items: center;
 }
 
 .footer-name {
   margin-left: 20%;
+}
+
+@media only screen and (max-width: 1024px) {
+
 }
