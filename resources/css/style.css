@@ -1,0 +1,88 @@
+html {
+  font-size: 20px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+/* Header */
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 100px;
+  width: 100%;
+  /* position: fixed;
+  z-index: 5; */
+}
+
+.title {
+  margin-left: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+header h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.title img {
+  margin-right: 2%;
+  height: 2rem;
+}
+/* Making a main div to push the remainder of page below the fixed header */
+#main {
+  top: 201px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: url("../images/moto.jpeg") no-repeat center center;
+  -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.announcement {
+  text-transform: uppercase;
+  width: 30%;
+  min-height: 50%;
+  background-color: black;
+  color: white;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.announcement h1 {
+  font-size: 2rem;
+  padding-top: 5%;
+}
+
+.announcement h1, .announcement h2 {
+  margin-left: 5%;
+}
+
+/* Navigation */
+nav {
+  background-color: red;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* */
+
+/* */
