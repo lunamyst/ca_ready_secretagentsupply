@@ -210,5 +210,102 @@ footer{
 }
 
 @media only screen and (max-width: 1024px) {
+.full-screen-nav {
+  display: none;
+}
 
+#catalog-total {
+  width: 100%;
+}
+
+.catalog-item {
+  width: 47%;
+}
+
+#catalog-three {
+  display: none;
+}
+
+#contact-info-total{
+  width: 100%;
+}
+
+.location, .hours {
+  width: 35%;
+}
+
+.announcement h1, .announcement h2 {
+  margin-left: 2rem;
+}
+
+.announcement h1 {
+  font-size: 1.5rem;
+}
+
+.announcement h2 {
+  font-size: 0.77rem;
+}
+}
+
+@media only screen and (min-width: 1025px) {
+  .small-screen-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .title {
+    margin-left: 0;
+  }
+
+  .jumbotron {
+    height: 15rem;
+  }
+
+.announcement {
+  width: 100%;
+  margin-top: 10rem;
+  margin-left: 0;
+  min-height: 0;
+}
+
+.announcement h2 {
+  padding-top:  1rem;
+}
+
+.announcement h1 {
+    font-size: 1rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+.catalog-item {
+    width: 90%;
+  }
+
+#catalog-two {
+  display: none;
+}
+
+#catalog-total {
+  justify-content: center;
+}
+
+#contact-info-total {
+  flex-direction: column;
+  align-items: center;
+}
+
+.location, .hours {
+  width: 90%;
+  padding-bottom: 0.5rem;
+}
+
+footer {
+  justify-content: center;
+}
+
+.footer-name {
+  margin-left: 0;
+}
 }
